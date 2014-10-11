@@ -1,8 +1,7 @@
 {
   "name": "voce-se-importa",
   "version": "0.0.1",
-  "description": "A sample Node.js app using Express 4",
-  "main": "index.js",
+  "description": "Um projeto social supimpa, para mudar o mundo!",
   "scripts": {
     "start": "node app.js"
   },
