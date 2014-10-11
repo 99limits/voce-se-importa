@@ -1,0 +1,16 @@
+{
+  "name": "voce-se-importa",
+  "version": "0.0.1",
+  "description": "A sample Node.js app using Express 4",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "~4.9.0",
+    "jade": "~1.6.0"
+  },
+  "engines": {
+    "node": "0.10.x"
+  }
+}
