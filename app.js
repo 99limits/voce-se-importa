@@ -4,7 +4,8 @@ var path = require('path');
 var routes_index = require('./routes/index');
 
 var app = express();
-app.listen(3000);
+app.set('port', (process.env.PORT || 3000));
+app.listen(app.get('port'));
 
 app.set('view engine', 'jade');
 app.set('views', path.join(__dirname, 'views'));
