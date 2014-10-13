@@ -1,4 +1,4 @@
-# voce-se-importa
+# voceseimporta
 
 A Node.js app using [Express 4](http://expressjs.com/).
 
@@ -7,8 +7,8 @@ A Node.js app using [Express 4](http://expressjs.com/).
 Make sure you have [Node.js](http://nodejs.org/) installed.
 
 ```sh
-$ git clone git@github.com:luizfaias/voce-se-importa
-$ cd voce-se-importa
+$ git clone git@github.com:99limits/voceseimporta
+$ cd voceseimporta
 $ npm install
 $ npm start
 ```
