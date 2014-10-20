@@ -12,7 +12,7 @@ html(lang='pt_BR')
     link(href='//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css', rel='stylesheet')
     link(href='stylesheets/style.css', rel='stylesheet')
 
-  body.instituicao
+  body(class=instituicao ? "instituicao" : undefined)
     .site-wrapper
       .site-wrapper-inner
         .cover-container
@@ -26,13 +26,16 @@ html(lang='pt_BR')
                 li: a(href='#contato') Contato
 
           .inner.cover
-            p: img(src='/images/logo-casa-dos-curumins.png')
-            h1.cover-heading Você se importa com as crianças?
-            p.lead
-              | As atividades propostas pela Casa dos Curumins pretendem resgatar aspectos essenciais do ser humano, proporcionando condições para o desenvolvimento da consciência de responsabilidade de cada um em tornar seu mundo, interno e externo, melhor.
-            p.lead
-              a.btn.btn-lg.btn-default(href='http://www.casadoscurumins.org') Conheça a Casa dos Curumins
-
+            - if (instituicao)
+              p: img(src='#{instituicao.logotipo_url}')
+              h1.cover-heading Você se importa com #{tag}?
+              p.lead
+                | #{instituicao.descricao}
+              p.lead
+                a.btn.btn-lg.btn-default(href='#{instituicao.url}') Conheça a #{instituicao.nome}
+            - else
+              h1 (´・︹ ・` )
+              h3.cover-heading Nenhuma instituição cadastrada para essa categoria.
           .mastfoot
             .inner
               p um projeto &nbsp;
