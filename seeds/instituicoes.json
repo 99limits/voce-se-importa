@@ -1,0 +1,16 @@
+[
+  {
+    "nome": "Casa dos Curumins",
+    "url": "http://www.casadoscurumins.org/",
+    "categoria": {
+      "nome": "crianças",
+      "tags": [
+        "criancas",
+        "crianças"
+      ]
+    },
+    "descricao": "As atividades propostas pela Casa dos Curumins pretendem resgatar aspectos essenciais do ser humano, proporcionando condições para o desenvolvimento da consciência de responsabilidade de cada um em tornar seu mundo, interno e externo, melhor.",
+    "logotipo_url": "http://voceseimporta.herokuapp.com/images/logo-casa-dos-curumins.png",
+    "background_url": "http://hayleyisaghost.co.uk/wp-content/uploads/2013/08/hiag-large-background1.jpg"
+  }
+]

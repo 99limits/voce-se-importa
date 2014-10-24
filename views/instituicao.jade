@@ -28,7 +28,7 @@ html(lang='pt_BR')
           .inner.cover
             - if (instituicao)
               p: img(src='#{instituicao.logotipo_url}')
-              h1.cover-heading Você se importa com #{tag}?
+              h1.cover-heading Você se importa com #{instituicao.categoria.nome}?
               p.lead
                 | #{instituicao.descricao}
               p.lead
