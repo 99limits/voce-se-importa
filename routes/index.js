@@ -14,7 +14,7 @@ router.get('/:tag', function(req, res) {
   collection.find({ "categoria.tags":  tag }, {}, function(e, instituicoes) {
     res.render('instituicao', {
       tag: tag,
-      instituicao: instituicoes.length ? instituicoes[0] : null
+      instituicao: instituicoes && instituicoes.length ? instituicoes[0] : null
     });
   });
 });
